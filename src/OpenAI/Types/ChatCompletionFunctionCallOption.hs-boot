@@ -1,0 +1,9 @@
+module OpenAI.Types.ChatCompletionFunctionCallOption where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data ChatCompletionFunctionCallOption
+instance Show ChatCompletionFunctionCallOption
+instance Eq ChatCompletionFunctionCallOption
+instance FromJSON ChatCompletionFunctionCallOption
+instance ToJSON ChatCompletionFunctionCallOption

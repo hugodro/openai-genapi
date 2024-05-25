@@ -1,0 +1,9 @@
+module OpenAI.Types.ChatCompletionRequestSystemMessage where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data ChatCompletionRequestSystemMessage
+instance Show ChatCompletionRequestSystemMessage
+instance Eq ChatCompletionRequestSystemMessage
+instance FromJSON ChatCompletionRequestSystemMessage
+instance ToJSON ChatCompletionRequestSystemMessage

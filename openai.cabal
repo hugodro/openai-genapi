@@ -1,0 +1,172 @@
+cabal-version: 1.12
+
+name:           openai
+version:        0.1.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      OpenAI
+      OpenAI.Operations.ListAssistants
+      OpenAI.Operations.CreateAssistant
+      OpenAI.Operations.GetAssistant
+      OpenAI.Operations.ModifyAssistant
+      OpenAI.Operations.DeleteAssistant
+      OpenAI.Operations.ListAssistantFiles
+      OpenAI.Operations.CreateAssistantFile
+      OpenAI.Operations.GetAssistantFile
+      OpenAI.Operations.DeleteAssistantFile
+      OpenAI.Operations.CreateSpeech
+      OpenAI.Operations.CreateTranscription
+      OpenAI.Operations.CreateTranslation
+      OpenAI.Operations.CreateChatCompletion
+      OpenAI.Operations.CreateCompletion
+      OpenAI.Operations.CreateEmbedding
+      OpenAI.Operations.ListFiles
+      OpenAI.Operations.CreateFile
+      OpenAI.Operations.RetrieveFile
+      OpenAI.Operations.DeleteFile
+      OpenAI.Operations.DownloadFile
+      OpenAI.Operations.ListPaginatedFineTuningJobs
+      OpenAI.Operations.CreateFineTuningJob
+      OpenAI.Operations.RetrieveFineTuningJob
+      OpenAI.Operations.CancelFineTuningJob
+      OpenAI.Operations.ListFineTuningEvents
+      OpenAI.Operations.CreateImageEdit
+      OpenAI.Operations.CreateImage
+      OpenAI.Operations.CreateImageVariation
+      OpenAI.Operations.ListModels
+      OpenAI.Operations.RetrieveModel
+      OpenAI.Operations.DeleteModel
+      OpenAI.Operations.CreateModeration
+      OpenAI.Operations.CreateThread
+      OpenAI.Operations.CreateThreadAndRun
+      OpenAI.Operations.GetThread
+      OpenAI.Operations.ModifyThread
+      OpenAI.Operations.DeleteThread
+      OpenAI.Operations.ListMessages
+      OpenAI.Operations.CreateMessage
+      OpenAI.Operations.GetMessage
+      OpenAI.Operations.ModifyMessage
+      OpenAI.Operations.ListMessageFiles
+      OpenAI.Operations.GetMessageFile
+      OpenAI.Operations.ListRuns
+      OpenAI.Operations.CreateRun
+      OpenAI.Operations.GetRun
+      OpenAI.Operations.ModifyRun
+      OpenAI.Operations.CancelRun
+      OpenAI.Operations.ListRunSteps
+      OpenAI.Operations.GetRunStep
+      OpenAI.Operations.SubmitToolOuputsToRun
+      OpenAI.Types
+      OpenAI.TypeAlias
+      OpenAI.Types.AssistantFileObject
+      OpenAI.Types.AssistantObject
+      OpenAI.Types.AssistantToolsCode
+      OpenAI.Types.AssistantToolsFunction
+      OpenAI.Types.AssistantToolsRetrieval
+      OpenAI.Types.ChatCompletionFunctionCallOption
+      OpenAI.Types.ChatCompletionFunctions
+      OpenAI.Types.ChatCompletionMessageToolCall
+      OpenAI.Types.ChatCompletionNamedToolChoice
+      OpenAI.Types.ChatCompletionRequestAssistantMessage
+      OpenAI.Types.ChatCompletionRequestFunctionMessage
+      OpenAI.Types.ChatCompletionRequestMessage
+      OpenAI.Types.ChatCompletionRequestMessageContentPart
+      OpenAI.Types.ChatCompletionRequestMessageContentPartImage
+      OpenAI.Types.ChatCompletionRequestMessageContentPartText
+      OpenAI.Types.ChatCompletionRequestSystemMessage
+      OpenAI.Types.ChatCompletionRequestToolMessage
+      OpenAI.Types.ChatCompletionRequestUserMessage
+      OpenAI.Types.ChatCompletionResponseMessage
+      OpenAI.Types.ChatCompletionTokenLogprob
+      OpenAI.Types.ChatCompletionTool
+      OpenAI.Types.ChatCompletionToolChoiceOption
+      OpenAI.Types.CompletionUsage
+      OpenAI.Types.CreateAssistantFileRequest
+      OpenAI.Types.CreateAssistantRequest
+      OpenAI.Types.CreateChatCompletionRequest
+      OpenAI.Types.CreateChatCompletionResponse
+      OpenAI.Types.CreateCompletionRequest
+      OpenAI.Types.CreateCompletionResponse
+      OpenAI.Types.CreateEmbeddingRequest
+      OpenAI.Types.CreateEmbeddingResponse
+      OpenAI.Types.CreateFineTuningJobRequest
+      OpenAI.Types.CreateImageRequest
+      OpenAI.Types.CreateMessageRequest
+      OpenAI.Types.CreateModerationRequest
+      OpenAI.Types.CreateModerationResponse
+      OpenAI.Types.CreateRunRequest
+      OpenAI.Types.CreateSpeechRequest
+      OpenAI.Types.CreateThreadAndRunRequest
+      OpenAI.Types.CreateThreadRequest
+      OpenAI.Types.CreateTranscriptionResponse
+      OpenAI.Types.CreateTranslationResponse
+      OpenAI.Types.DeleteAssistantFileResponse
+      OpenAI.Types.DeleteAssistantResponse
+      OpenAI.Types.DeleteFileResponse
+      OpenAI.Types.DeleteModelResponse
+      OpenAI.Types.DeleteThreadResponse
+      OpenAI.Types.Embedding
+      OpenAI.Types.FineTuningJob
+      OpenAI.Types.FineTuningJobEvent
+      OpenAI.Types.FunctionObject
+      OpenAI.Types.Image
+      OpenAI.Types.ImagesResponse
+      OpenAI.Types.ListAssistantFilesResponse
+      OpenAI.Types.ListAssistantsResponse
+      OpenAI.Types.ListFilesResponse
+      OpenAI.Types.ListFineTuningJobEventsResponse
+      OpenAI.Types.ListMessageFilesResponse
+      OpenAI.Types.ListMessagesResponse
+      OpenAI.Types.ListModelsResponse
+      OpenAI.Types.ListPaginatedFineTuningJobsResponse
+      OpenAI.Types.ListRunStepsResponse
+      OpenAI.Types.ListRunsResponse
+      OpenAI.Types.MessageContentImageFileObject
+      OpenAI.Types.MessageContentTextAnnotationsFileCitationObject
+      OpenAI.Types.MessageContentTextAnnotationsFilePathObject
+      OpenAI.Types.MessageContentTextObject
+      OpenAI.Types.MessageFileObject
+      OpenAI.Types.MessageObject
+      OpenAI.Types.Model
+      OpenAI.Types.ModifyAssistantRequest
+      OpenAI.Types.ModifyMessageRequest
+      OpenAI.Types.ModifyRunRequest
+      OpenAI.Types.ModifyThreadRequest
+      OpenAI.Types.OpenAIFile
+      OpenAI.Types.RunCompletionUsage
+      OpenAI.Types.RunObject
+      OpenAI.Types.RunStepCompletionUsage
+      OpenAI.Types.RunStepDetailsMessageCreationObject
+      OpenAI.Types.RunStepDetailsToolCallsCodeObject
+      OpenAI.Types.RunStepDetailsToolCallsCodeOutputImageObject
+      OpenAI.Types.RunStepDetailsToolCallsCodeOutputLogsObject
+      OpenAI.Types.RunStepDetailsToolCallsFunctionObject
+      OpenAI.Types.RunStepDetailsToolCallsObject
+      OpenAI.Types.RunStepDetailsToolCallsRetrievalObject
+      OpenAI.Types.RunStepObject
+      OpenAI.Types.RunToolCallObject
+      OpenAI.Types.SubmitToolOutputsRunRequest
+      OpenAI.Types.ThreadObject
+      OpenAI.Configuration
+      OpenAI.SecuritySchemes
+      OpenAI.Common
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , text
+    , ghc-prim
+    , http-conduit
+    , http-client
+    , http-types
+    , bytestring
+    , aeson
+    , unordered-containers
+    , vector
+    , scientific
+    , time
+    , mtl
+    , transformers
+  default-language: Haskell2010

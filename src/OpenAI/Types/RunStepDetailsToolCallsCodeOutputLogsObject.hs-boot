@@ -1,0 +1,9 @@
+module OpenAI.Types.RunStepDetailsToolCallsCodeOutputLogsObject where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data RunStepDetailsToolCallsCodeOutputLogsObject
+instance Show RunStepDetailsToolCallsCodeOutputLogsObject
+instance Eq RunStepDetailsToolCallsCodeOutputLogsObject
+instance FromJSON RunStepDetailsToolCallsCodeOutputLogsObject
+instance ToJSON RunStepDetailsToolCallsCodeOutputLogsObject

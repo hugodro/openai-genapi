@@ -1,0 +1,14 @@
+module OpenAI.Types.CreateThreadAndRunRequest where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data CreateThreadAndRunRequest
+instance Show CreateThreadAndRunRequest
+instance Eq CreateThreadAndRunRequest
+instance FromJSON CreateThreadAndRunRequest
+instance ToJSON CreateThreadAndRunRequest
+data CreateThreadAndRunRequestTools'NonNullableVariants
+instance Show CreateThreadAndRunRequestTools'NonNullableVariants
+instance Eq CreateThreadAndRunRequestTools'NonNullableVariants
+instance FromJSON CreateThreadAndRunRequestTools'NonNullableVariants
+instance ToJSON CreateThreadAndRunRequestTools'NonNullableVariants

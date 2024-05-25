@@ -1,0 +1,10 @@
+module OpenAI.Types.RunStepCompletionUsage where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data RunStepCompletionUsageNonNullable
+instance Show RunStepCompletionUsageNonNullable
+instance Eq RunStepCompletionUsageNonNullable
+instance FromJSON RunStepCompletionUsageNonNullable
+instance ToJSON RunStepCompletionUsageNonNullable
+type RunStepCompletionUsage = OpenAI.Common.Nullable RunStepCompletionUsageNonNullable

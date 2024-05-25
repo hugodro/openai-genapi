@@ -1,0 +1,14 @@
+module OpenAI.Types.RunStepDetailsMessageCreationObject where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data RunStepDetailsMessageCreationObject
+instance Show RunStepDetailsMessageCreationObject
+instance Eq RunStepDetailsMessageCreationObject
+instance FromJSON RunStepDetailsMessageCreationObject
+instance ToJSON RunStepDetailsMessageCreationObject
+data RunStepDetailsMessageCreationObjectMessageCreation'
+instance Show RunStepDetailsMessageCreationObjectMessageCreation'
+instance Eq RunStepDetailsMessageCreationObjectMessageCreation'
+instance FromJSON RunStepDetailsMessageCreationObjectMessageCreation'
+instance ToJSON RunStepDetailsMessageCreationObjectMessageCreation'

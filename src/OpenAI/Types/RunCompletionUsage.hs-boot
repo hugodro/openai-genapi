@@ -1,0 +1,10 @@
+module OpenAI.Types.RunCompletionUsage where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data RunCompletionUsageNonNullable
+instance Show RunCompletionUsageNonNullable
+instance Eq RunCompletionUsageNonNullable
+instance FromJSON RunCompletionUsageNonNullable
+instance ToJSON RunCompletionUsageNonNullable
+type RunCompletionUsage = OpenAI.Common.Nullable RunCompletionUsageNonNullable

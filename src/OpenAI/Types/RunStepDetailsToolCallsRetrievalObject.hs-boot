@@ -1,0 +1,9 @@
+module OpenAI.Types.RunStepDetailsToolCallsRetrievalObject where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data RunStepDetailsToolCallsRetrievalObject
+instance Show RunStepDetailsToolCallsRetrievalObject
+instance Eq RunStepDetailsToolCallsRetrievalObject
+instance FromJSON RunStepDetailsToolCallsRetrievalObject
+instance ToJSON RunStepDetailsToolCallsRetrievalObject

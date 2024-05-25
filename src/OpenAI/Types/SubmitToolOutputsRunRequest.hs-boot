@@ -1,0 +1,14 @@
+module OpenAI.Types.SubmitToolOutputsRunRequest where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data SubmitToolOutputsRunRequest
+instance Show SubmitToolOutputsRunRequest
+instance Eq SubmitToolOutputsRunRequest
+instance FromJSON SubmitToolOutputsRunRequest
+instance ToJSON SubmitToolOutputsRunRequest
+data SubmitToolOutputsRunRequestToolOutputs'
+instance Show SubmitToolOutputsRunRequestToolOutputs'
+instance Eq SubmitToolOutputsRunRequestToolOutputs'
+instance FromJSON SubmitToolOutputsRunRequestToolOutputs'
+instance ToJSON SubmitToolOutputsRunRequestToolOutputs'

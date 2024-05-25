@@ -1,0 +1,19 @@
+module OpenAI.Types.MessageContentTextObject where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data MessageContentTextObject
+instance Show MessageContentTextObject
+instance Eq MessageContentTextObject
+instance FromJSON MessageContentTextObject
+instance ToJSON MessageContentTextObject
+data MessageContentTextObjectText'
+instance Show MessageContentTextObjectText'
+instance Eq MessageContentTextObjectText'
+instance FromJSON MessageContentTextObjectText'
+instance ToJSON MessageContentTextObjectText'
+data MessageContentTextObjectText'Annotations'Variants
+instance Show MessageContentTextObjectText'Annotations'Variants
+instance Eq MessageContentTextObjectText'Annotations'Variants
+instance FromJSON MessageContentTextObjectText'Annotations'Variants
+instance ToJSON MessageContentTextObjectText'Annotations'Variants

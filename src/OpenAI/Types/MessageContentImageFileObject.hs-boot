@@ -1,0 +1,14 @@
+module OpenAI.Types.MessageContentImageFileObject where
+import Data.Aeson
+import qualified Data.Aeson as Data.Aeson.Types.Internal
+import qualified OpenAI.Common
+data MessageContentImageFileObject
+instance Show MessageContentImageFileObject
+instance Eq MessageContentImageFileObject
+instance FromJSON MessageContentImageFileObject
+instance ToJSON MessageContentImageFileObject
+data MessageContentImageFileObjectImageFile'
+instance Show MessageContentImageFileObjectImageFile'
+instance Eq MessageContentImageFileObjectImageFile'
+instance FromJSON MessageContentImageFileObjectImageFile'
+instance ToJSON MessageContentImageFileObjectImageFile'
